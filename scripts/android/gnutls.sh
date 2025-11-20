@@ -39,6 +39,21 @@ make distclean 2>/dev/null 1>/dev/null
 
 # REGENERATE BUILD FILES IF NECESSARY OR REQUESTED
 if [[ ! -f "${BASEDIR}"/src/"${LIB_NAME}"/configure ]] || [[ ${RECONF_gnutls} -eq 1 ]]; then
+  # Create missing po files to avoid bootstrap errors
+  mkdir -p po
+  touch po/Makevars.template
+  touch po/Makefile.in.in
+  echo "DOMAIN = gnutls" > po/POTFILES.in
+
+  # Create minimal po/Makefile that does nothing
+  cat > po/Makefile.in << 'EOF'
+all:
+install:
+clean:
+distclean:
+.PHONY: all install clean distclean
+EOF
+
   ./bootstrap --skip-po || return 1
   git submodule update --remote gnulib || return 1
   overwrite_file ./gnulib/lib/fpending.c ./src/gl/fpending.c || return 1
@@ -66,6 +81,9 @@ fi
   --disable-maintainer-mode \
   --disable-full-test-suite \
   --host="${HOST}" || return 1
+
+# Remove po from SUBDIRS to avoid build errors (we don't need internationalization)
+${SED_INLINE} 's/SUBDIRS = \(.*\) po/SUBDIRS = \1/' Makefile
 
 make -j$(get_cpu_count) || return 1
 
