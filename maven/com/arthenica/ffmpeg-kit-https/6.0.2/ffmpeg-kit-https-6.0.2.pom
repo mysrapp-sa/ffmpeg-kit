@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.arthenica</groupId>
+  <artifactId>ffmpeg-kit-https</artifactId>
+  <version>6.0.2</version>
+  <packaging>aar</packaging>
+
+  <name>FFmpeg Kit HTTPS</name>
+  <description>FFmpeg Kit HTTPS Package for Android (LGPL 3.0)</description>
+  <url>https://github.com/mysrapp-ae/ffmpeg-kit</url>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License v3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>mySrapp Team</name>
+      <organization>mySrapp</organization>
+      <organizationUrl>https://github.com/mysrapp-ae</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/mysrapp-ae/ffmpeg-kit.git</connection>
+    <developerConnection>scm:git:ssh://github.com:mysrapp-ae/ffmpeg-kit.git</developerConnection>
+    <url>https://github.com/mysrapp-ae/ffmpeg-kit</url>
+  </scm>
+</project>
