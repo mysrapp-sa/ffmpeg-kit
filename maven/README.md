@@ -9,7 +9,7 @@ Add this repository to your `build.gradle`:
 ```gradle
 repositories {
     maven {
-        url 'https://raw.githubusercontent.com/mysrapp-ae/ffmpeg-kit/main/maven'
+        url 'https://raw.githubusercontent.com/MySRApp-SA/ffmpeg-kit/main/maven'
     }
 }
 

@@ -177,7 +177,7 @@ ls -lh prebuilt/android-aar/
    - `jni/` folder με `.so` files για κάθε architecture
 
 2. **Upload στο GitHub**:
-   - Πήγαινε στο https://github.com/mysrapp-ae/ffmpeg-kit/releases
+   - Πήγαινε στο https://github.com/MySRApp-SA/ffmpeg-kit/releases
    - Create new release (v6.0-android)
    - Upload τα AAR files
 
