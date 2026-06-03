@@ -11,7 +11,7 @@
 
   <name>FFmpeg Kit HTTPS</name>
   <description>FFmpeg Kit HTTPS Package for Android (LGPL 3.0)</description>
-  <url>https://github.com/mysrapp-ae/ffmpeg-kit</url>
+  <url>https://github.com/MySRApp-SA/ffmpeg-kit</url>
 
   <licenses>
     <license>
@@ -25,13 +25,13 @@
     <developer>
       <name>mySrapp Team</name>
       <organization>mySrapp</organization>
-      <organizationUrl>https://github.com/mysrapp-ae</organizationUrl>
+      <organizationUrl>https://github.com/MySRApp-SA</organizationUrl>
     </developer>
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/mysrapp-ae/ffmpeg-kit.git</connection>
-    <developerConnection>scm:git:ssh://github.com:mysrapp-ae/ffmpeg-kit.git</developerConnection>
-    <url>https://github.com/mysrapp-ae/ffmpeg-kit</url>
+    <connection>scm:git:git://github.com/MySRApp-SA/ffmpeg-kit.git</connection>
+    <developerConnection>scm:git:ssh://github.com:MySRApp-SA/ffmpeg-kit.git</developerConnection>
+    <url>https://github.com/MySRApp-SA/ffmpeg-kit</url>
   </scm>
 </project>
